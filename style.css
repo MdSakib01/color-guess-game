@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    height: 100%;
+    width: auto;
+    background: rgb(0, 0, 0);
+    
+
+}
+
+.main h1{
+    text-align: center;
+    color: rgb(12, 112, 27);
+    padding-top: 20px;
+    text-decoration: underline;
+    font-size: 40px;
+    position: relative;
+}
+.container{
+    height: 70%;
+    width: auto;
+    /* background-color: aliceblue; */
+    display: flex;
+    justify-content: center;
+    
+}
+.game-bord{
+   margin-top: 5%;
+    height: 100%;
+    width: 40%;
+    background-color: rebeccapurple;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+.glass-box{
+    height: 35%;
+    width: auto;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+  
+}
+.glass{
+    height: 80%;
+    width: 20%;
+    /* background-color: rgb(255, 38, 0); */
+    border-top: 5px solid gray;
+    border-bottom: 15px solid gray;
+    -webkit-clip-path:polygon(0% 0%,100% 0%,80% 100%,20% 100%);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+
+}
+.r{
+    background-color: red;
+}
+.g{
+    background-color: green;
+}
+.b{
+    background-color: blue;
+}
+.option{
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+.option > div{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+@media (max-width:480px){
+     /* .game-bord{
+        height: 100%;
+        width: 100%;
+       
+    }  */
+      .container{
+        height: 100%;
+      }
+    .game-bord{
+        height:100% ;
+        width: 100%;
+        margin-top: 0;
+      
+    }
+    .glass-box{
+        padding:40px 0 30px;
+    }
+}
